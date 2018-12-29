@@ -97,9 +97,9 @@
             }
         }
     }
-	</pre>
+</pre>
 - judgefinished函数，用于判断整个战场的战斗是否已经结束：
-	<pre>
+<pre>
 	public int judgefinished(){
         Boolean good = false;
         Boolean bad = false;
