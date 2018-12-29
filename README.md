@@ -10,18 +10,24 @@
 ## 2.项目运行 ##
 - 使用Maven对项目进行编译，打包。运行target目录下Calabash-1.0-SNAPSHOT.jar。
 ### 初始化 ###
+![初始化](https://github.com/161220127/myhomework/blob/master/screenpicture/1.png)
 - 进入初始化界面，选择点击”开始游戏”或Space键进入准备阶段，选择点击“历史记录”或L键读取历史战斗记录文档，选择点击“退出游戏”或E键退出游戏界面。
+![准备](https://github.com/161220127/myhomework/blob/master/screenpicture/2.png)
 - 进入准备阶段后，可点击左右两侧的阵型按钮为葫芦娃阵营和妖怪阵营设置阵型（为公平起见，双方各由8个生物体组成）。
 ### 战斗过程 ###
+![战斗过程](https://github.com/161220127/myhomework/blob/master/screenpicture/3.png)
 - 准备完毕之后，按下Space键后葫芦娃与妖精自动进行战斗。
 - 双方自由移动(速度为1单位/s)，进入指定距离后相互攻击。
 - 生物体死亡后，会在原地留下实体，实体会阻碍剩余的生物体的移动。实体会在战场界面刷新20次后自动消失(防止有可能生物被实体围住无法交战）。
 ### 战斗结束 ###
+![战斗结束](https://github.com/161220127/myhomework/blob/master/screenpicture/4.png)
 - 某个阵营的生物全部阵亡后，游戏即结束，根据战斗结果显示不同的结束画面。
 - 根据画面上的提示，按下S键可打开保存文件框保存刚刚的战斗记录，按下Space键回到初始化界面，新增加的“复盘”按钮点击后可重演刚刚的战斗过程，新增的“保存文件”按钮可同样用来保存战斗记录。
 ### 记录读取 ###
+![记录读取](https://github.com/161220127/myhomework/blob/master/screenpicture/5.png)
 - 在战斗未开始或已结束的状态下，可通过点击“历史记录”按钮或L键打开文件打开对话框，读取与target目录同级的history目录下的历史记录文件，若读取了正确的文件，可重演历史战斗记录。
-
+### 运行效果 ###
+![运行效果](https://github.com/161220127/myhomework/blob/master/screenpicture/6.gif)
 ## 3.项目结构 ##
 ### package gui ###
 - 存放通过javafx框架实现的图形化界面代码，包括：
