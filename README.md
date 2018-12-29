@@ -70,7 +70,21 @@
 
 ### Battlefield类 ###
 - Battlefield类中拥有一个Block类的二维数组，一个Creature类的二维数组及Trooparrays类的对象以及如下的函数：
-- init函数，根据为双方阵营选择的阵型，在战场中放置和调整双方阵营的生物体, 其中根据泛型的设计思想，设计了放置（Put）函数和移除（Remove）函数.
+- init函数，根据为双方阵营选择的阵型，在战场中放置和调整双方阵营的生物体, 其中根据泛型的设计思想，设计了放置（Put）函数和移除（Remove）函数:
+<pre>
+public <Template extends Creature> void Put(int x, int y, Template c){
+        blocks[x][y].creature = c;
+        creatures[x][y] = c;
+        creatures[x][y].block = blocks[x][y];
+    }
+
+    public <Template extends Creature> void Remove(int x, int y){
+        Creature temp = new Nonexistent(this);
+        temp.block = blocks[x][y];
+        creatures[x][y] = temp;
+        blocks[x][y].creature = temp;
+    }
+</pre>
 
 - start函数，用于启动所有生物体的线程：
 <pre> public void start() {
