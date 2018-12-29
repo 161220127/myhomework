@@ -73,7 +73,7 @@
 - init函数，根据为双方阵营选择的阵型，在战场中放置和调整双方阵营的生物体, 其中根据泛型的设计思想，设计了放置（Put）函数和移除（Remove）函数.
 
 - start函数，用于启动所有生物体的线程：
-	<pre> public void start() {
+<pre> public void start() {
         for(int i = 0; i < lenx; i++) {
             for (int j = 0; j < leny; j++) {
                 if (creatures[i][j].type !=  Creature.Type.NONEXISTENET && creatures[i][j].isalive) {
