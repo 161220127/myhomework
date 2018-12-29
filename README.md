@@ -1,4 +1,4 @@
-# Java Final Project 程序说明#
+# Java Final Project 程序说明
 
 ----------
 ## 1.开发环境 ##
