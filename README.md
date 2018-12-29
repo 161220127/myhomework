@@ -73,11 +73,12 @@
 - init函数，根据为双方阵营选择的阵型，在战场中放置和调整双方阵营的生物体, 其中根据泛型的设计思想，设计了如下的放置（Put）函数和移除（Remove）函数：
 <pre>
 	public <Template extends Creature> void Put(int x, int y, Template c){
-        blocks[x][y].creature = c;
+       blocks[x][y].creature = c;
         creatures[x][y] = c;
         creatures[x][y].block = blocks[x][y];
     }
-
+</pre>
+<pre>
     public <Template extends Creature> void Remove(int x, int y){
         Creature temp = new Nonexistent(this);
         temp.block = blocks[x][y];
